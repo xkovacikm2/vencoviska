@@ -9,6 +9,7 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks', '2.3.0'
 gem 'jbuilder', '2.2.3'
 gem 'pg', '0.17.1'
+gem 'bcrypt', '3.1.7'
 gem 'sdoc', '0.4.0', group: :doc
 
 group :development, :test do
