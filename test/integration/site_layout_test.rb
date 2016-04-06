@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SiteLayoutBakTest < ActionDispatch::IntegrationTest
+class SiteLayoutTest < ActionDispatch::IntegrationTest
 
   test "layout links" do
     get root_path
