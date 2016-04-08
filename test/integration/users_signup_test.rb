@@ -13,18 +13,20 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       }
     end
     assert_template 'users/new'
+    assert_not is_logged_in?
   end
 
   test "valid signup" do
     assert_difference 'User.count', 1 do
       post_via_redirect users_path, user: {
-          name: "flm",
-          email: "flm@flm.sk",
+          name: "example",
+          email: "flm@example.sk",
           password: "123456",
           password_confirmation: "123456"
       }
     end
     assert_template 'users/show'
     assert_select "div>div", "Vitajte vo Venčoviskách"
+    assert is_logged_in?
   end
 end
