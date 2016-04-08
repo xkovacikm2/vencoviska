@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#ignore all rubymine things
+/.idea
+
+#ignore git push script
+gpush.sh

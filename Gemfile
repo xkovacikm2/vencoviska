@@ -10,6 +10,7 @@ gem 'turbolinks', '2.3.0'
 gem 'jbuilder', '2.2.3'
 gem 'pg', '0.17.1'
 gem 'bcrypt', '3.1.7'
+gem 'formtastic-bootstrap'
 gem 'sdoc', '0.4.0', group: :doc
 
 group :development, :test do
@@ -26,4 +27,5 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.2'
+  gem 'puma', '3.1.0'
 end
