@@ -1,0 +1,13 @@
+<%= semantic_form_for @user do |f| %>
+    <%= render 'shared/error_messages' %>
+
+    <%= f.semantic_errors %>
+
+    <%= f.inputs do %>
+        <%= f.input :name %>
+        <%= f.input :email, as: :email %>
+        <%= f.input :password, as: :password %>
+        <%= f.input :password_confirmation, as: :password %>
+    <% end %>
+    <%= f.action :submit, label: locals[:btn_action] %>
+<% end %>

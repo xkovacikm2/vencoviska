@@ -1,0 +1,22 @@
+<% provide(:title, "Upraviť profil - #{@user.name}") %>
+<h1>Upraviť profil</h1>
+<div class="row">
+  <div class="col-md-4 col-md-offset-1">
+    <%= render 'shared/full_user_form', locals: {btn_action: 'Uložiť zmeny'} %>
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target="_blank">change</a>
+    </div>
+  </div>
+
+  <div class="col-md-5 col-md-offset-1">
+
+    <%= semantic_form_for @user do |f| %>
+        <%= f.inputs do %>
+            <%= f.input :description, as: :text,  :input_html=> { :class => 'form-control', :rows => 11, :cols => 20, :maxlength => 300  } %>
+        <% end %>
+        <%= f.action :submit, label: 'Uložiť popis' %>
+    <% end %>
+
+  </div>
+</div>

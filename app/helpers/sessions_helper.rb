@@ -1,5 +1,9 @@
 module SessionsHelper
 
+  ######################
+  #Log in helper methods
+  ######################
+
   def log_in (user)
     session[:user_id] = user.id
   end
@@ -22,9 +26,17 @@ module SessionsHelper
     end
   end
 
+  def current_user?(user)
+    current_user==user
+  end
+
   def logged_in?
     !current_user.nil?
   end
+
+  ######################
+  #Log out helper methods
+  ######################
 
   def log_out
     forget current_user
@@ -37,4 +49,18 @@ module SessionsHelper
     cookies.delete :user_id
     cookies.delete :remember_token
   end
+
+  ###################################
+  #Friendly forwarding helper methods
+  ###################################
+
+  def redirect_back(default)
+    redirect_to(session[:forwarding_url] || default)
+    session.delete :forwarding_url
+  end
+
+  def store_location
+    session[:forwarding_url] = request.url if request.get?
+  end
+
 end

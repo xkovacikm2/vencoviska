@@ -6,14 +6,14 @@
         <li><%= link_to "Domov", '/' %></li>
         <li><%= link_to "Nápoveda", help_path %></li>
         <% if logged_in? %>
-            <li><%= link_to "Použivatelia", '#' %></li>
+            <li><%= link_to "Použivatelia", users_path %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Môj účet <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
                 <li><%= link_to "Profil", current_user %></li>
-                <li><%= link_to "Nastavenia", '#' %></li>
+                <li><%= link_to "Nastavenia", edit_user_path(current_user) %></li>
                 <li class="divider"></li>
                 <li><%= link_to "Odhlásiť", logout_path, method: "delete" %></li>
               </ul>

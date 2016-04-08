@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if can_log_in? user
       log_in user
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-      redirect_to user
+      redirect_back user
     else
       flash.now[:danger] = 'Nesprávne meno, alebo heslo!'
       render 'new'
