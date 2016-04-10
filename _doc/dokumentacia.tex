@@ -1,0 +1,53 @@
+\documentclass[12pt,oneside,slovak,a4paper]{article}
+\usepackage[slovak]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{longtable} 
+\usepackage{cite}
+\usepackage{times}
+\usepackage{listings} % umožňuje paste kódu \lstset{language=Java} \begin{lstlisting}[frame=single]
+\usepackage[dvips,dvipdfm,a4paper,centering,textwidth=14cm,top=4.6cm,headsep=.6cm,footnotesep=1cm,footskip=0.6cm,bottom=3.8cm]{geometry}
+%opening
+\pagestyle{headings}
+\title{DBS etapa 1}
+
+\author{Michal Kováčik\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xkovacikm2@gmail.com}}
+	}
+
+\date{\small datum}
+
+\begin{document}
+
+\maketitle
+
+\section{Stručný prehľad}
+Aplikácia je vo veľmi rozpracovanom štádiu. Je možné sa do nej registrovať, prihlásiť, prezerať zoznamy miest, prezerať oblasti v mestách, prezerať, pridávať a mazať vlastné komentáre v jednotlivých zónach, prezerať profily iných užívateľov, a pokiaľ je človek administrátor, môže aj mazať iných užívateľov.
+Interaktívne zaznačovanie zón na mape zatiaľ nie je implementované, ale to by pre účely tohoto odovzdania nemalo prekážať.
+Celý projekt je implementovaný v ruby a využíva postgresql databázu.
+
+\section{Realizácia scenárov}
+\paragraph{Vytvorenie nového záznamu} je realizované ako registrácia uživateľa do systému a pridanie komentáru (využíva vlastný insert my\_save) k ľubovoľnej zóne.
+\paragraph*{Aktualizácia existujúceho záznamu} je realizovaná ako možnosť upraviť uživateľské informácie ako meno, email, popis atď... (využíva vlastnú implementáciu my\_update\_attributes)
+\paragraph{Vymazanie záznamu} je realizovaný ako zmazanie uživateľa administrátorom (my\_destroy, ktorá zároveň zmaže všetky uživateľove komentáre) a ako zmazanie vlastného komentára uživateľom.
+\paragraph{Zobrazenie prehľadu viacerých záznamov} je realizované ako prehľad užívateľov, prehľad miest, prehľad zón v mestách a prehľad komentárov v zónach.
+\paragraph{Zobrazenie konkrétneho záznamu} je realizované ako zobrazenie konkrétneho uživateľa, konkrétneho mesta, alebo konkrétnej zóny.
+\paragraph{Transakcia} implementovaná ako vymazanie všetkých uživateľových komentárov a následne zmazanie záznamu samotného uživateľa.
+\paragraph{Join, agregačná funkcia, Group by} sú použité pre zobrazenie prehľadu počtu registrovaných uživateľov v meste a priemerného veku uživateľov prihlásených v danom meste.
+\paragraph{Filtrovanie} realizované implicitne ako zobrazovanie oblastí len pre dané mesto, komentárov len pre danú oblasť, alebo uživateľa.
+
+\section{Model}
+\includegraphics[scale=0.7]{VOS_DBS-model.png}
+Model som oproti pôvodnému návrhu, po konzultácií, zjednošil. Vypadli odtiaľ zbytočné väzobné entity medzi userom a komentárom, userom a mestom a tabuľka rolí pre uživateľa. User vytvára komentár, môže ich mať ľubovoľne veľa. User vytvára aj Area, takisto ľubovoľne veľa. Area vždy patrí do nejakého mesta a má ohraničenie niekoľkými rovnými čiarami.
+
+\section{Záver}
+Keďže aplikácia má nad 5MB limit AIS, prikladám link na stiahnutie z google drive \url{https://drive.google.com/open?id=0B7NOCTI1dZlfcUdGMjEzbS1XMWM}
+K projektu som priložil dump aj seed do databázy.
+
+\end{document}
