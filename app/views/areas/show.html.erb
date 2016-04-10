@@ -1,0 +1,21 @@
+<h2>Zona <%= @area.name %></h2>
+<p class="center">je v meste: <%= link_to @area.city.name, @area.city %></p>
+
+<% if logged_in? %>
+    <div class="row">
+      <aside class="col-md-4 col-md-offset-4">
+        <section class="micropost_form">
+          <%= render 'comments/comment_form' %>
+        </section>
+      </aside>
+    </div>
+<% end %>
+
+<hr>
+<h2> Počet príspevkov <%= @comments.count %></h2>
+<% if @comments.any? %>
+    <ol class="comments">
+      <%= render @comments %>
+    </ol>
+    <%= will_paginate @comments %>
+<% end %>

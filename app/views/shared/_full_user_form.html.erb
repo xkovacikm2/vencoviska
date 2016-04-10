@@ -6,6 +6,8 @@
     <%= f.inputs do %>
         <%= f.input :name %>
         <%= f.input :email, as: :email %>
+        <%= f.input :city, as: :select, collection: @cities %>
+        <%= f.input :birthday, as: :date_picker, input_html: { placeholder: "YYYY-MM-DD" } %>
         <%= f.input :password, as: :password %>
         <%= f.input :password_confirmation, as: :password %>
     <% end %>

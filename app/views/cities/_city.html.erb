@@ -1,0 +1,15 @@
+<li>
+  <%= link_to city.name, city %>
+  <% if !current_user.nil? && current_user.admin? %>
+      | <%= link_to "Zmazať", city, method: :delete, data: { confirm: "Naozaj?" }, class: 'btn btn-primary' %>
+  <% end %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Aktivita v meste</h3>
+    </div>
+    <div class="panel-body">
+      <h4>Počet zon v meste: <%= city.areas.count %></h4>
+      <h4>Počet registrovaných uživatelov z mesta: <%= city.users.count %></h4>
+    </div>
+  </div>
+</li>

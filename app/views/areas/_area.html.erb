@@ -1,0 +1,16 @@
+<li>
+  <%= link_to area.name, area %>
+  <% if !current_user.nil? && current_user.admin? %>
+      | <%= link_to "Zmazať", area, method: :delete, data: { confirm: "Naozaj?" }, class: 'btn btn-primary' %>
+  <% end %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Podrobnosti o zone</h3>
+    </div>
+    <div class="panel-body">
+      <h4>Počet komentarov k zone: <%= area.comments.count %></h4>
+      <h4>Vytvoril: <%= link_to(area.user.name, area.user) unless area.user.nil? %> </h4>
+      <div class="debug_dump">pocet hranic zony: <%= area.area_border_lines.count unless area.area_border_lines.nil? %></div>
+    </div>
+  </div>
+</li>

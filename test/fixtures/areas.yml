@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Park psov
+  description: tu sa so psami smie
+  user: flm
+  city: Bratislava
+
+two:
+  name: Parkovisko
+  description: tu sa s nimi nesmie
+  user: flm
+  city: Kosice

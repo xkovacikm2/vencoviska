@@ -5,10 +5,13 @@ class UsersController < ApplicationController
 
   def new
     @user=User.new
+    @cities = City.all
   end
 
   def show
-    @user=User.find(params[:id])
+    #@user=User.find params[:id]
+    @user=User.my_find_by_id params[:id]
+    @comments = @user.comments.paginate page: params[:page]
   end
 
   def create
@@ -23,10 +26,13 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @cities = City.all
   end
 
   def update
-    if @user.update_attributes(user_params)
+    #TODO uncomment
+    #if @user.update_attributes(user_params)
+    if @user.my_update_attributes(user_params)
       flash[:success] = "Profil aktualizovaný"
       redirect_to @user
     else
@@ -35,11 +41,14 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users=User.paginate(page: params[:page])
+    @users=User.paginate page: params[:page]
+    @cities=City.all
   end
 
   def destroy
-    User.find(params[:id]).destroy
+    #TODO uncomment
+    #User.find(params[:id]).destroy
+    User.find(params[:id]).my_destroy
     flash[:success] = "Uživatel zmazaný"
     redirect_to users_url
   end
@@ -49,18 +58,10 @@ class UsersController < ApplicationController
   ################################
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :description)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :description, :city_id, :birthday)
   end
 
   ### Before filters
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = "Nie ste prihlasení"
-      redirect_to login_url
-    end
-  end
 
   def correct_user
     @user = User.find(params[:id])

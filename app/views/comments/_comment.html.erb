@@ -1,0 +1,18 @@
+<li id="comment-<%= comment.id %>">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">o: <%= link_to(comment.area.name, comment.area) unless comment.area.nil? %></h3>
+      <span class="timestamp">
+        Posted <%= time_ago_in_words(comment.created_at) %> ago.
+      </span>
+      <% if current_user.admin? || current_user?(comment.user) %>
+          | <%= link_to "Zmazať", comment, method: :delete, data: { confirm: "Naozaj?" }, class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+    <div class="panel-body">
+      <%= link_to gravatar_for(comment.user, size: 50), comment.user %>
+      <span class="user"><%= link_to comment.user.name, comment.user %></span>
+      <span class="content"><%= comment.content %></span>
+    </div>
+  </div>
+</li>

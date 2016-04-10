@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  x_from: 1.5
+  y_from: 1.5
+  x_to: 1.5
+  y_to: 1.5
+  area_id: 
+
+two:
+  x_from: 1.5
+  y_from: 1.5
+  x_to: 1.5
+  y_to: 1.5
+  area_id: 
