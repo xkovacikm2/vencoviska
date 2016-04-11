@@ -78,7 +78,11 @@ class User < ActiveRecord::Base
   end
 
   #same as find_by_id but unsafe and lame
-  def my_find_by_id
-
+  def self.my_find_by_id(id)
+    sql = "
+      SELECT * FROM users
+      WHERE id=#{id}
+    "
+    User.find_by_sql(sql).first
   end
 end
