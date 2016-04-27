@@ -33,7 +33,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: vencoviska_development
+  database: vencoviska_test
   pool: 5
   username: postgres 
   password: postgres

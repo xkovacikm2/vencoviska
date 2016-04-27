@@ -16,7 +16,7 @@
 /tmp
 
 #ignore all rubymine things
-/.idea
+.idea
 
 #ignore git push script
 gpush.sh

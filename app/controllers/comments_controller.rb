@@ -3,9 +3,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = current_user.comments.build comment_params
-    #TODO uncomment
-    #if @comment.save
-    if @comment.my_save
+    if @comment.save
       flash[:success] = "Komentar vytvoreny!"
       redirect_back current_user
     else

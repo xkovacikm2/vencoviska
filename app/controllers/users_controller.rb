@@ -9,8 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    #@user=User.find params[:id]
-    @user=User.my_find_by_id params[:id]
+    @user=User.find params[:id]
     @comments = @user.comments.paginate page: params[:page]
   end
 
@@ -30,9 +29,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    #TODO uncomment
-    #if @user.update_attributes(user_params)
-    if @user.my_update_attributes(user_params)
+    if @user.update_attributes(user_params)
       flash[:success] = "Profil aktualizovaný"
       redirect_to @user
     else
@@ -46,9 +43,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    #TODO uncomment
-    #User.find(params[:id]).destroy
-    User.find(params[:id]).my_destroy
+    User.find(params[:id]).destroy
     flash[:success] = "Uživatel zmazaný"
     redirect_to users_url
   end
