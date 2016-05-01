@@ -1,5 +1,6 @@
 <h2>Zona <%= @area.name %></h2>
 <p class="center">je v meste: <%= link_to @area.city.name, @area.city %></p>
+<p>Počet návštevníkov stránky zony: <%= @card %></p>
 
 <% if logged_in? %>
     <div class="row">
@@ -15,7 +16,10 @@
 <h2> Počet príspevkov <%= @comments.count %></h2>
 <% if @comments.any? %>
     <ol class="comments">
-      <%= render @comments %>
+      <% @comments.each do |comment| %>
+          <% comment=Comment.new comment unless comment.instance_of? Comment%>
+          <%= render comment %>
+      <% end %>
     </ol>
     <%= will_paginate @comments %>
 <% end %>

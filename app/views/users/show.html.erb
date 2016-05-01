@@ -17,15 +17,30 @@
       <div class="panel-body">
         <p><%= @user.description %></p>
         <p><strong>Bydlisko:</strong><%= link_to(@user.city.name, @user.city) unless @user.city.nil? %></p>
+        <p>Profil prezeralo: <%= @card %> uživatelov</p>
       </div>
     </div>
   </div>
 </div>
 
-<h2> Počet príspevkov <%= @comments.count %></h2>
-<% if @comments.any? %>
-<ol class="comments">
-  <%=render @comments %>
-</ol>
-<%= will_paginate @comments %>
-<% end %>
+<div class="row">
+  <div class="col-md-6">
+    <h2> Počet príspevkov <%= @comments.count %></h2>
+    <% if @comments.any? %>
+        <ol class="comments">
+          <%= render @comments %>
+        </ol>
+        <%= will_paginate @comments %>
+    <% end %>
+  </div>
+  <div class="col-md-6">
+    <h2> Posledné navštívené stránky </h2>
+    <ul class="pages">
+      <% @pages.each do |page|%>
+        <li>
+          <a href="<%=page%>"><%=page%></a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

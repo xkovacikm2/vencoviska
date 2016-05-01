@@ -63,4 +63,12 @@ module SessionsHelper
     session[:forwarding_url] = request.url if request.get?
   end
 
+  ###################################
+  #Caching last 10 visited pages
+  ###################################
+
+  def cache_location
+    $redis.lpush("user-pages-#{@current_user.id}", request.url)
+    $redis.ltrim("user-pages-#{@current_user.id}", 0, 9)
+  end
 end

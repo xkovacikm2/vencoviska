@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
     @comment = current_user.comments.build comment_params
     if @comment.save
       flash[:success] = "Komentar vytvoreny!"
+      $redis.del("comments-#{comment.area.id}")
       redirect_back current_user
     else
       flash[:danger] = "Nieco zlyhalo!"
@@ -13,7 +14,9 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    Comment.find(params[:id]).destroy
+    comment = Comment.find(params[:id])
+    $redis.del("comments-#{comment.area.id}")
+    comment.destroy
     flash[:success] = "Komentar zmazaný"
     redirect_back current_user
   end
