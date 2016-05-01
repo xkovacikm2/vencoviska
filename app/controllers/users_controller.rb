@@ -11,12 +11,9 @@ class UsersController < ApplicationController
   def show
     @user=User.find params[:id]
     @comments = @user.comments.paginate page: params[:page]
-    uid = request.remote_ip + (current_user.nil? ? '':current_user.id.to_s)
-    $redis.sadd("user-#{@user.id}", "#{uid}")
-    @card = $redis.scard("user-#{@user.id}")
-
     @pages = $redis.lrange("user-pages-#{@user.id}", 0, -1)
 
+    @card = unique_visits "user-#{@user.id}"
     cache_location if logged_in?
   end
 

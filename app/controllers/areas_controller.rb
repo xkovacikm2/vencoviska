@@ -15,10 +15,7 @@ class AreasController < ApplicationController
     end
     @comment = @area.comments.build
 
-    uid = request.remote_ip + (current_user.nil? ? '':current_user.id.to_s)
-    $redis.sadd("area-#{@area.id}", "#{uid}")
-    @card = $redis.scard("area-#{@area.id}")
-
+    @card = unique_visits "area-#{@area.id}"
     cache_location if logged_in?
   end
 
