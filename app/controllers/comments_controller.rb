@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
     @comment = current_user.comments.build comment_params
     if @comment.save
       flash[:success] = "Komentar vytvoreny!"
-      $redis.del("comments-#{comment.area.id}")
+      $redis.del("comments-#{@comment.area.id}")
       redirect_back current_user
     else
       flash[:danger] = "Nieco zlyhalo!"
