@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.2'
+gem 'activerecord-postgis-adapter'
 gem 'sass-rails', '5.0.2'
 gem 'bootstrap-sass'
 gem 'uglifier', '2.5.3'

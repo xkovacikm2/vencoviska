@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
+  adapter: postgis
   encoding: unicode
   host: localhost
   # For details on connection pooling, see rails configuration guide
@@ -23,7 +23,7 @@ default: &default
   pool: 5
 
 development:
-  adapter: postgresql
+  adapter: postgis
   encoding: unicode
   database: vencoviska_development
   pool: 5
@@ -31,7 +31,7 @@ development:
   password: postgres
 
 test:
-  adapter: postgresql
+  adapter: postgis
   encoding: unicode
   database: vencoviska_test
   pool: 5
