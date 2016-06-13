@@ -17,7 +17,6 @@
 default: &default
   adapter: postgis
   encoding: unicode
-  host: localhost
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -26,6 +25,7 @@ development:
   adapter: postgis
   encoding: unicode
   database: vencoviska_development
+  host: localhost
   pool: 5
   username: postgres 
   password: postgres
@@ -33,6 +33,7 @@ development:
 test:
   adapter: postgis
   encoding: unicode
+  host: localhost
   database: vencoviska_test
   pool: 5
   username: postgres 
@@ -40,5 +41,6 @@ test:
 
 production:
   <<: *default
+  host: <%= ENV['DATABASE_URL'] %>
   username: vencoviska
   password: <%= ENV['VENCOVISKA_DATABASE_PASSWORD'] %>
