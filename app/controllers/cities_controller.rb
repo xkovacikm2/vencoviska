@@ -1,4 +1,6 @@
 class CitiesController < ApplicationController
+  autocomplete :city, :name
+
   def show
     @city = City.find params[:id]
     @areas = @city.areas.paginate page: params[:page]
@@ -8,16 +10,9 @@ class CitiesController < ApplicationController
   end
 
   def index
-    @cities = City.paginate page: params[:page]
-
+    if params[:search]
+      @cities = City.paginate_by_sql("Select * from cities where name like '#{params[:search]}%'", page: params[:page])
+    end
     cache_location if logged_in?
-  end
-
-  def create
-
-  end
-
-  def destroy
-
   end
 end

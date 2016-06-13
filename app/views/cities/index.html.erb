@@ -1,8 +1,13 @@
 <% provide(:title, 'Zoznam miest') %>
 <h1>Zoznam miest</h1>
 
-<%= will_paginate %>
+<%= form_tag(cities_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], class: "search-query", placeholder: "Bratislava", type: "search", data: {autocomplete: cities_autocomplete_city_name_path} %>
+    <%= submit_tag "Hladať" %>
+<%end%>
+
+<%= will_paginate if @cities%>
 
 <ul class="cities">
-  <%= render @cities %>
+  <%= render @cities if @cities%>
 </ul>

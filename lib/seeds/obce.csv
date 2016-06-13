@@ -1,7 +1,6 @@
 1,Ábelová,Ábelová,985 13,33,1
 2,Abovce,Abovce,980 44,53,1
 3,Abrahám,Abrahám,925 45,16,7
-4,Abrahámovce,Abrahámovce,059 72,21,5
 5,Abrahámovce,Abrahámovce,086 41,4,5
 6,Abramová,Abramová,038 22,71,8
 7,Abranovce,Abranovce,082 52,49,5
@@ -63,7 +62,6 @@
 63,Baňa Lucia,Baňa Lucia,044 25,27,3
 64,Banka,Banka,921 01,45,7
 65,Banky,Banky,969 01,3,1
-66,Banky,Banky,972 25,50,6
 67,Bánov,Bánov,941 01,42,4
 68,Bánová,Bánová,010 04,79,8
 69,Bánovce nad Bebravou,Bánovce nad Bebravou,,1,6
@@ -103,7 +101,6 @@
 103,Becherov,Becherov,086 35,4,5
 104,Beketfa,Beketfa,930 34,15,7
 105,Belá,Belá,013 05,79,8
-106,Belá,Belá,943 53,42,4
 107,Belá - Dulice,Belá - Dulice,038 11,35,8
 108,Belá nad Cirochou,Belá nad Cirochou,067 81,60,5
 109,Beladice,Beladice,951 75,75,4
@@ -200,12 +197,9 @@
 200,Bohdanovce nad Trnavou,Bohdanovce n/Trnavou,919 09,70,7
 201,Boheľov,Boheľov,929 01,15,7
 202,Bohunice,Bohunice,018 52,20,6
-203,Bohunice,Bohunice,919 30,70,7
-204,Bohunice,Bohunice,935 05,30,4
 205,Bohúňovo,Bohúňovo,049 12,54,3
 206,Bojná,Bojná,956 01,67,4
 207,Bojnice,Bojnice,972 01,50,6
-208,Bojnice - kúpele,Bojnice - kúpele,972 01,50,6
 209,Bojničky,Bojničky,920 55,18,7
 210,Bokroš,Bokroš,946 39,22,4
 211,Bokša,Bokša,091 01,64,5
@@ -239,7 +233,6 @@
 239,Brádno,Brádno,982 67,53,1
 240,Branč,Branč,951 13,40,4
 241,Branovo,Branovo,941 31,42,4
-242,Bratislava,Bratislava,,5,2
 243,Bratislava - Čunovo,Čunovo,851 10,9,2
 244,Bratislava - Devín,Devín,841 10,8,2
 245,Bratislava - Devínska Nová Ves,Devínska Nová Ves,,8,2
@@ -265,29 +258,23 @@
 265,Brekov,Brekov,066 01,19,5
 266,Brestina,Brestina,985 53,33,1
 267,Brestov,Brestov,066 01,19,5
-268,Brestov,Brestov,082 05,49,5
 269,Brestov nad Laborcom,Brestov nad Laborcom,067 01,36,5
 270,Brestovany,Brestovany,919 27,70,7
 271,Brestové,Brestové,916 42,41,6
 272,Brestovec,Brestovec,907 01,38,6
-273,Brestovec,Brestovec,946 17,22,4
 274,Bretejovce,Bretejovce,082 03,49,5
 275,Bretka,Bretka,980 46,54,3
 276,Breza,Breza,029 53,39,8
 277,Brezany,Brezany,010 04,79,8
-278,Brezany,Brezany,972 12,50,6
-279,Brezina,Brezina,076 12,68,3
 280,Breziny,Breziny,962 61,76,1
 281,Breznica,Breznica,091 01,64,5
 282,Breznička,Breznička,091 01,64,5
-283,Breznička,Breznička,985 02,46,1
 284,Brezno,Brezno,,10,1
 285,Brezolupy,Brezolupy,957 01,1,6
 286,Brezov,Brezov,087 01,4,5
 287,Brezová pod Bradlom,Brezová pod Bradlom,906 13,38,6
 288,Brezovec,Brezovec,067 73,60,5
 289,Brezovica,Brezovica,028 01,72,8
-290,Brezovica,Brezovica,082 74,56,5
 291,Brezovička,Brezovička,082 74,56,5
 292,Brezovka,Brezovka,086 11,4,5
 293,Brežany,Brežany,082 41,49,5
@@ -304,10 +291,7 @@
 304,Brunovce,Brunovce,916 25,41,6
 305,Brusnica,Brusnica,090 31,64,5
 306,Brusník,Brusník,982 65,52,1
-307,Brusník,Brusník,991 01,73,1
 308,Brusno,Brusno,972 32,50,6
-309,Brusno,Brusno,976 62,2,1
-310,Brusno - kúpele,Brusno - kúpele,976 62,2,1
 311,Brutovce,Brutovce,053 73,31,5
 312,Bruty,Bruty,943 55,42,4
 313,Brvnište,Brvnište,018 12,48,6
@@ -337,10 +321,6 @@
 337,Buková,Buková,919 10,70,7
 338,Bukovce,Bukovce,090 22,64,5
 339,Bukovec,Bukovec,044 20,27,3
-340,Bukovec,Bukovec,906 14,38,6
-341,Bukovec,Bukovec,991 02,73,1
-342,Bukovina,Bukovina,032 23,32,8
-343,Bukovina,Bukovina,966 01,78,1
 344,Bukovina,Bukovina,968 01,77,1
 345,Bukovinka,Bukovinka,053 14,31,5
 346,Bukovinka,Bukovinka,985 51,13,1
@@ -357,12 +337,9 @@
 357,Buzitka,Buzitka,985 41,33,1
 358,Byster,Byster,044 41,27,3
 359,Bystrá,Bystrá,090 23,64,5
-360,Bystrá,Bystrá,977 01,10,1
 361,Bystrany,Bystrany,053 62,62,3
 362,Bystré,Bystré,094 34,74,5
 363,Bystričany,Bystričany,972 45,50,6
-364,Bystrička,Bystrička,038 04,35,8
-365,Bystrička,Bystrička,946 38,22,4
 366,Bystrička,Bystrička,985 24,46,1
 367,Byšta,Byšta,076 13,68,3
 368,Bytča,Bytča,014 01,11,8
@@ -376,7 +353,6 @@
 376,Bzovská Lehôtka,Bzovská Lehôtka,962 62,76,1
 377,Bžany,Bžany,090 33,64,5
 378,Cabaj,Cabaj,951 17,40,4
-379,Cabaj - Čápor,Cabaj - Čápor,951 17,40,4
 380,Cabov,Cabov,094 14,74,5
 381,Cakov,Cakov,980 42,53,1
 382,Cejkov,Cejkov,076 05,68,3
@@ -384,7 +360,6 @@
 384,Cemjata,Cemjata,080 01,49,5
 385,Cernina,Cernina,090 16,65,5
 386,Cerová,Cerová,906 33,58,7
-387,Cerová,Cerová,972 48,50,6
 388,Ceroviny,Ceroviny,951 24,40,4
 389,Cerovo,Cerovo,962 52,28,1
 390,Cestice,Cestice,044 71,27,3
@@ -403,14 +378,11 @@
 403,Čačín,Čačín,974 01,2,1
 404,Čáčov,Čáčov,905 01,58,7
 405,Čadca,Čadca,,12,8
-406,Čadca - Kyčerka,Čadca - Kyčerka,022 04,12,8
 407,Čadečka,Čadečka,022 01,12,8
 408,Čachtice,Čachtice,916 21,41,6
 409,Čajakovo,Čajakovo,935 61,30,4
 410,Čajkov,Čajkov,935 24,30,4
 411,Čaka,Čaka,935 68,30,4
-412,Čakajovce,Čakajovce,951 43,40,4
-413,Čakanovce,Čakanovce,044 45,27,3
 414,Čakanovce,Čakanovce,985 58,33,1
 415,Čakany,Čakany,930 40,15,7
 416,Čaklov,Čaklov,094 35,74,5
@@ -421,7 +393,6 @@
 421,Čápor,Čápor,951 17,40,4
 422,Čaradice,Čaradice,953 01,75,4
 423,Čáry,Čáry,908 43,58,7
-424,Častá,Častá,900 89,44,2
 425,Částa,Částa,946 03,22,4
 426,Častkov,Častkov,906 04,58,7
 427,Častkovce,Častkovce,916 27,41,6
@@ -438,11 +409,8 @@
 438,Čechynce,Čechynce,951 07,40,4
 439,Čekovce,Čekovce,962 41,28,1
 440,Čeľadice,Čeľadice,951 03,40,4
-441,Čeľadince,Čeľadince,956 16,67,4
 442,Čeláre,Čeláre,991 22,73,1
 443,Čelkova Lehota,Čelkova Lehota,018 16,48,6
-444,Čelovce,Čelovce,082 14,49,5
-445,Čelovce,Čelovce,991 41,73,1
 446,Čeľovce,Čeľovce,076 17,68,3
 447,Čemerné,Čemerné,093 03,74,5
 448,Čenkesfa,Čenkesfa,929 01,15,7
@@ -465,16 +433,13 @@
 465,Červeň,Červeň,985 02,46,1
 466,Červená Skala,Červená Skala,976 71,10,1
 467,Červená Voda,Červená Voda,083 01,56,5
-468,Červeňany,Červeňany,049 64,52,1
 469,Červeňany,Červeňany,991 01,73,1
 470,Červenica,Červenica,082 07,49,5
 471,Červenica pri Sabinove,Červenica pri Sabin.,082 56,56,5
 472,Červeník,Červeník,920 42,18,7
 473,Červený Hrádok,Červený Hrádok,951 82,75,4
 474,Červený Kameň,Červený Kameň,018 56,20,6
-475,Červený Kameň,Červený Kameň,900 89,44,2
 476,Červený Kláštor,Červený Kláštor,059 06,21,5
-477,Červený Kláštor - kúpele,Červený Kláštor-kúp.,059 06,21,5
 478,České Brezovo,České Brezovo,985 03,46,1
 479,Čiakov,Čiakov,013 54,11,8
 480,Čičarovce,Čičarovce,076 71,37,3
@@ -487,8 +452,6 @@
 487,Čierna Lehota,Čierna Lehota,956 53,1,6
 488,Čierna nad Tisou,Čierna nad Tisou,076 43,68,3
 489,Čierna Voda,Čierna Voda,925 06,16,7
-490,Čierne,Čierne,013 55,11,8
-491,Čierne,Čierne,023 13,12,8
 492,Čierne,Čierne,023 56,12,8
 493,Čierne Kľačany,Čierne Kľačany,953 05,75,4
 494,Čierne nad Topľou,Čierne nad Topľou,094 34,74,5
@@ -505,7 +468,6 @@
 505,Čimhová,Čimhová,027 12,72,8
 506,Čirč,Čirč,065 42,63,5
 507,Číž,Číž,980 43,53,1
-508,Číž - kúpele,Číž - kúpele,980 43,53,1
 509,Čižatice,Čižatice,044 47,27,3
 510,Čoltovo,Čoltovo,049 12,54,3
 511,Čremošné,Čremošné,039 01,71,8
@@ -533,14 +495,12 @@
 533,Delava,Delava,053 75,62,3
 534,Demandice,Demandice,935 85,30,4
 535,Demänová,Demänová,029 57,39,8
-536,Demänová,Demänová,031 01,32,8
 537,Demänovská Dolina,Demänovská Dolina,031 01,32,8
 538,Demjata,Demjata,082 13,49,5
 539,Demkovská,Demkovská,027 05,14,8
 540,Dešná,Dešná,020 54,51,6
 541,Detrík,Detrík,094 31,74,5
 542,Detva,Detva,962 12,13,1
-543,Detva - sídlisko,Detva - sídlisko,962 12,13,1
 544,Detvianska Huta,Detvianska Huta,962 05,13,1
 545,Devičany,Devičany,935 04,30,4
 546,Devičie,Devičie,962 65,28,1
@@ -558,7 +518,6 @@
 558,Divinka,Divinka,013 31,79,8
 559,Divínske Lazy,Divínske Lazy,985 52,33,1
 560,Dlhá,Dlhá,919 01,70,7
-561,Dlhá Lúka,Dlhá Lúka,032 23,32,8
 562,Dlhá Lúka,Dlhá Lúka,085 01,4,5
 563,Dlhá nad Kysucou,Dlhá nad Kysucou,023 54,12,8
 564,Dlhá nad Oravou,Dlhá nad Oravou,027 55,14,8
@@ -570,37 +529,27 @@
 570,Dlhé Stráže,Dlhé Stráže,054 01,31,5
 571,Dlhoňa,Dlhoňa,090 02,65,5
 572,Dlžín,Dlžín,972 26,50,6
-573,Dobogov,Dobogov,935 56,30,4
 574,Dobogov,Dobogov,044 71,27,3
-575,Dobrá,Dobrá,076 41,68,3
 576,Dobrá,Dobrá,914 01,69,6
 577,Dobrá Niva,Dobrá Niva,962 61,76,1
-578,Dobrá Voda,Dobrá Voda,919 54,70,7
 579,Dobrá Voľa,Dobrá Voľa,053 61,62,3
 580,Dobrianky,Dobrianky,094 23,74,5
-581,Dobroč,Dobroč,976 52,10,1
 582,Dobroč,Dobroč,985 53,33,1
 583,Dobročná,Dobročná,972 27,50,6
 584,Dobrohošť,Dobrohošť,930 31,15,7
 585,Dobroslava,Dobroslava,090 01,65,5
 586,Dobrý Potok,Dobrý Potok,985 26,46,1
 587,Dobšiná,Dobšiná,049 25,54,3
-588,Dobšinská Ľadová Jaskyňa,Dobšin. Ľad. Jaskyňa,049 71,54,3
 589,Dobšinská Maša,Dobšinská Maša,049 73,54,3
 590,Dohňany,Dohňany,020 51,51,6
 591,Dojč,Dojč,906 02,58,7
 592,Doľany,Doľany,053 02,31,5
-593,Doľany,Doľany,900 88,44,2
 594,Dolina,Dolina,027 05,14,8
-595,Dolina,Dolina,082 38,49,5
 596,Dolinka,Dolinka,991 28,73,1
-597,Dolinky,Dolinky,013 62,11,8
-598,Dolinky,Dolinky,020 53,51,6
 599,Dolinky,Dolinky,962 63,76,1
 600,Dolná Breznica,Dolná Breznica,020 61,51,6
 601,Dolná Bzová,Dolná Bzová,985 51,13,1
 602,Dolná Krupá,Dolná Krupá,919 65,70,7
-603,Dolná Lehota,Dolná Lehota,027 41,14,8
 604,Dolná Lehota,Dolná Lehota,976 98,10,1
 605,Dolná Mariková,Dolná Mariková,018 02,48,6
 606,Dolná Mičiná,Dolná Mičiná,974 01,2,1
@@ -691,7 +640,6 @@
 691,Dražice,Dražice,980 23,53,1
 692,Dražkovce,Dražkovce,038 02,35,8
 693,Dražovce,Dražovce,949 01,40,4
-694,Drážovce,Drážovce,962 68,28,1
 695,Driečna,Driečna,090 23,64,5
 696,Drienčany,Drienčany,980 23,53,1
 697,Drienica,Drienica,083 01,56,5
@@ -702,36 +650,25 @@
 702,Drietoma,Drietoma,913 03,69,6
 703,Drňa,Drňa,980 03,53,1
 704,Drnava,Drnava,049 42,54,3
-705,Drnava,Drnava,991 02,73,1
 706,Družstevná pri Hornáde,Družstevná pri Horn.,044 31,27,3
 707,Drženice,Drženice,935 03,30,4
 708,Držkovce,Držkovce,982 62,52,1
 709,Ďubákovo,Ďubákovo,985 07,46,1
-710,Dubie,Dubie,024 01,29,8
 711,Dubie,Dubie,086 45,4,5
 712,Dubinné,Dubinné,086 12,4,5
 713,Dubková,Dubková,020 55,51,6
 714,Dubnica,Dubnica,972 01,50,6
 715,Dubnica nad Váhom,Dubnica nad Váhom,018 41,20,6
 716,Dubnička,Dubnička,957 03,1,6
-717,Dubník,Dubník,082 07,49,5
 718,Dubník,Dubník,941 35,42,4
 719,Dubno,Dubno,980 35,53,1
 720,Dubodiel,Dubodiel,913 23,69,6
 721,Dubová,Dubová,090 11,65,5
-722,Dubová,Dubová,900 90,44,2
-723,Dubová,Dubová,976 97,10,1
 724,Dubovany,Dubovany,922 08,45,7
 725,Dubovce,Dubovce,908 62,59,7
 726,Dubové,Dubové,038 23,71,8
-727,Dubové,Dubové,962 61,76,1
 728,Dubovec,Dubovec,980 41,53,1
 729,Dubovica,Dubovica,082 71,56,5
-730,Dúbrava,Dúbrava,032 12,32,8
-731,Dúbrava,Dúbrava,053 05,31,5
-732,Dúbrava,Dúbrava,067 73,60,5
-733,Dúbrava,Dúbrava,082 06,49,5
-734,Dúbrava,Dúbrava,913 33,69,6
 735,Dúbrava,Dúbrava,991 02,73,1
 736,Dúbravica,Dúbravica,976 33,2,1
 737,Dúbravka,Dúbravka,072 15,37,3
@@ -765,10 +702,7 @@
 765,Dvorec,Dvorec,038 45,71,8
 766,Dvorec,Dvorec,956 55,1,6
 767,Dvorianky,Dvorianky,076 62,68,3
-768,Dvorníky,Dvorníky,044 02,27,3
-769,Dvorníky,Dvorníky,920 56,18,7
 770,Dvorníky,Dvorníky,962 68,28,1
-771,Dvorníky - Včeláre,Dvorníky - Včeláre,044 02,27,3
 772,Dvorníky nad Nitricou,Dvorníky n/ Nitricou,972 22,50,6
 773,Dvory nad Žitavou,Dvory nad Žitavou,941 31,42,4
 774,Dyčka,Dyčka,952 01,40,4
@@ -816,7 +750,6 @@
 816,Gbeľany,Gbeľany,013 02,79,8
 817,Gbelce,Gbelce,943 42,42,4
 818,Gbely,Gbely,908 45,59,7
-819,Geča č. 107-110,Geča č. 107-110,044 14,27,3
 820,Geča,Geča,044 10,27,3
 821,Gelnica,Gelnica,056 01,17,3
 822,Gemer,Gemer,982 01,52,1
@@ -834,7 +767,6 @@
 834,Géňa,Géňa,934 01,30,4
 835,Geraltov,Geraltov,082 67,49,5
 836,Gerlachov,Gerlachov,059 42,47,5
-837,Gerlachov,Gerlachov,086 04,4,5
 838,Giglovce,Giglovce,094 05,74,5
 839,Giraltovce,Giraltovce,087 01,65,5
 840,Girovce,Girovce,094 06,74,5
@@ -851,7 +783,6 @@
 851,Granč - Petrovce,Granč - Petrovce,053 05,31,5
 852,Gregorova Vieska,Gregorova Vieska,985 56,33,1
 853,Gregorovce,Gregorovce,082 66,49,5
-854,Gregorovce,Gregorovce,982 52,52,1
 855,Gribov,Gribov,090 22,64,5
 856,Grodzin,Grodzin,094 31,74,5
 857,Grúne,Grúne,027 05,14,8
@@ -860,7 +791,6 @@
 860,Gyňov,Gyňov,044 14,27,3
 861,Habovka,Habovka,027 32,72,8
 862,Habura,Habura,067 52,36,5
-863,Hačava,Hačava,044 02,27,3
 864,Hačava,Hačava,981 01,53,1
 865,Hadoše,Hadoše,018 02,48,6
 866,Hadovce,Hadovce,945 01,22,4
@@ -868,7 +798,6 @@
 868,Hadviga,Hadviga,038 22,71,8
 869,Hágy,Hágy,059 04,21,5
 870,Háj,Háj,039 01,71,8
-871,Háj,Háj,044 02,27,3
 872,Hájiky - Maky,Hájiky - Maky,987 01,46,1
 873,Hajná Nová Ves,Hajná Nová Ves,956 03,67,4
 874,Hajnáčka,Hajnáčka,980 33,53,1
@@ -880,10 +809,7 @@
 880,Haligovce,Haligovce,065 34,63,5
 881,Haluzice,Haluzice,913 07,41,6
 882,Hámor,Hámor,976 66,10,1
-883,Hámre,Hámre,053 33,17,3
 884,Hámre,Hámre,913 21,69,6
-885,Hámre - Dolné Hámre,Hámre - Dolné Hámre,966 61,77,1
-886,Hámre - Horné Hámre,Hámre - Horné Hámre,966 71,77,1
 887,Hamuliakovo,Hamuliakovo,900 43,57,2
 888,Handlová,Handlová,972 51,50,6
 889,Hanigovce,Hanigovce,082 56,56,5
@@ -891,7 +817,6 @@
 891,Haniska,Haniska,080 01,49,5
 892,Hanková,Hanková,049 34,54,3
 893,Hankovce,Hankovce,067 12,19,5
-894,Hankovce,Hankovce,086 46,4,5
 895,Hanušovce nad Topľou,Hanušovce nad Topľou,094 31,74,5
 896,Harakovce,Harakovce,053 05,31,5
 897,Harhaj,Harhaj,086 45,4,5
@@ -929,11 +854,9 @@
 929,Hladovka,Hladovka,027 13,72,8
 930,Hlavice,Hlavice,023 22,12,8
 931,Hlboké,Hlboké,018 03,48,6
-932,Hlboké,Hlboké,906 31,58,7
 933,Hlboké nad Váhom,Hlboké nad Váhom,014 01,11,8
 934,Hlinené,Hlinené,023 54,12,8
 935,Hliník,Hliník,032 23,32,8
-936,Hliník,Hliník,945 01,22,4
 937,Hliník nad Hronom,Hliník nad Hronom,966 01,78,1
 938,Hliník nad Váhom,Hliník nad Váhom,014 01,11,8
 939,Hlinné,Hlinné,094 35,74,5
@@ -948,7 +871,6 @@
 948,Hodejov,Hodejov,980 31,53,1
 949,Hodejovec,Hodejovec,980 02,53,1
 950,Hodkovce,Hodkovce,044 21,27,3
-951,Hodkovce,Hodkovce,053 61,62,3
 952,Hodruša - Hámre,Hodruša - Hámre,966 61,77,1
 953,Hodulov Vrch,Hodulov Vrch,916 14,38,6
 954,Hokovce,Hokovce,935 84,30,4
@@ -975,13 +897,11 @@
 975,Horná Kráľová,Horná Kráľová,951 32,66,4
 976,Horná Krupá,Horná Krupá,919 65,70,7
 977,Horná Lehota,Horná Lehota,027 41,14,8
-978,Horná Lehota,Horná Lehota,976 81,10,1
 979,Horná Mariková,Horná Mariková,018 03,48,6
 980,Horná Mičiná,Horná Mičiná,974 01,2,1
 981,Horná Môlča,Horná Môlča,974 01,2,1
 982,Horná Poruba,Horná Poruba,018 35,20,6
 983,Horná Potôň,Horná Potôň,930 36,15,7
-984,Horná Potôň - Lúky,Horná Potôň - Lúky,930 52,15,7
 985,Horná Seč,Horná Seč,935 31,30,4
 986,Horná Streda,Horná Streda,916 24,41,6
 987,Horná Strehová,Horná Strehová,991 02,73,1
@@ -1052,7 +972,6 @@
 1052,Horný Vadičov,Horný Vadičov,023 45,29,8
 1053,Horný Vinodol,Horný Vinodol,951 06,40,4
 1054,Horovce,Horovce,020 62,51,6
-1055,Horovce,Horovce,072 02,37,3
 1056,Horša,Horša,934 01,30,4
 1057,Hoste,Hoste,925 45,16,7
 1058,Hostice,Hostice,980 04,53,1
@@ -1380,7 +1299,6 @@
 1380,Kamenný Most,Kamenný Most,943 58,42,4
 1381,Kamenný Vrch,Kamenný Vrch,992 01,73,1
 1382,Kamienka,Kamienka,065 32,63,5
-1383,Kamienka,Kamienka,067 83,19,5
 1384,Kanaš,Kanaš,082 21,49,5
 1385,Kanianka,Kanianka,972 17,50,6
 1386,Kapince,Kapince,951 24,40,4
@@ -1425,11 +1343,8 @@
 1425,Kírť,Kírť,991 22,73,1
 1426,Kišovce,Kišovce,059 12,47,5
 1427,Kľačany,Kľačany,920 64,18,7
-1428,Kľačany,Kľačany,956 02,67,4
-1429,Kľačany,Kľačany,966 11,78,1
 1430,Kľače,Kľače,013 19,79,8
 1431,Kľačno,Kľačno,972 15,50,6
-1432,Kľačno,Kľačno,034 01,55,8
 1433,Kladzany,Kladzany,094 21,74,5
 1434,Kľak,Kľak,966 77,77,1
 1435,Klasov,Klasov,951 53,40,4
@@ -1475,8 +1390,6 @@
 1475,Kočín,Kočín,922 04,45,7
 1476,Kočovce,Kočovce,916 31,41,6
 1477,Kochanovce,Kochanovce,066 01,19,5
-1478,Kochanovce,Kochanovce,086 46,4,5
-1479,Kochanovce,Kochanovce,913 05,69,6
 1480,Kochnáč,Kochnáč,956 54,1,6
 1481,Kojatice,Kojatice,082 32,49,5
 1482,Kojatická Dolina,Kojatická Dolina,082 32,49,5
@@ -1495,18 +1408,13 @@
 1495,Kolíňany,Kolíňany,951 78,40,4
 1496,Kolinovce,Kolinovce,053 42,62,3
 1497,Kolónia,Kolónia,076 42,68,3
-1498,Kolónia,Kolónia,929 01,15,7
-1499,Kolónia,Kolónia,930 35,15,7
-1500,Kolónia,Kolónia,943 56,42,4
 1501,Kolonica,Kolonica,067 61,60,5
 1502,Kolta,Kolta,941 33,42,4
 1503,Komanica,Komanica,072 15,37,3
 1504,Komárany,Komárany,093 01,74,5
 1505,Komárno,Komárno,,22,4
-1506,Komárno,Komárno,962 05,13,1
 1507,Komárov,Komárov,086 11,4,5
 1508,Komárovce,Komárovce,044 55,27,3
-1509,Komárovce,Komárovce,073 01,61,3
 1510,Komjatice,Komjatice,941 06,42,4
 1511,Komjatná,Komjatná,034 96,55,8
 1512,Komoča,Komoča,941 21,42,4
@@ -1516,7 +1424,6 @@
 1516,Konkoľ,Konkoľ,947 01,22,4
 1517,Konrádovce,Konrádovce,980 32,53,1
 1518,Konská,Konská,013 13,79,8
-1519,Konská,Konská,032 04,32,8
 1520,Konské,Konské,038 52,35,8
 1521,Koňuš,Koňuš,072 63,61,3
 1522,Kopanice,Kopanice,023 56,12,8
@@ -1535,7 +1442,6 @@
 1535,Korunková,Korunková,090 31,64,5
 1536,Korytárky,Korytárky,962 04,13,1
 1537,Korytné,Korytné,013 54,11,8
-1538,Korytné,Korytné,053 05,31,5
 1539,Korytnica - kúpele,Korytnica - kúpele,034 73,55,8
 1540,Kosihovce,Kosihovce,991 25,73,1
 1541,Kosihy nad Ipľom,Kosihy nad Ipľom,991 11,73,1
@@ -1562,7 +1468,6 @@
 1562,Košeca,Košeca,018 64,20,6
 1563,Košecké Podhradie,Košecké Podhradie,018 31,20,6
 1564,Košecké Rovné,Košecké Rovné,018 32,20,6
-1565,Košice,Košice,,23,3
 1566,Košice - Barca,Barca,040 17,26,3
 1567,Košice - Dargovských Hrdinov,Dargovských Hrdinov,,25,3
 1568,Košice - Džungľa,Džungľa,,23,3
@@ -2762,7 +2667,6 @@
 2762,Poniky,Poniky,976 33,2,1
 2763,Poprad,Poprad,058 01,47,5
 2764,Poproč,Poproč,044 24,27,3
-2765,Poproč,Poproč,982 67,53,1
 2766,Popudinské Močidľany,Popudinské Močidľany,908 61,59,7
 2767,Poráč,Poráč,053 23,62,3
 2768,Poriadie,Poriadie,906 22,38,6
@@ -2770,18 +2674,11 @@
 2770,Poruba,Poruba,972 11,50,6
 2771,Poruba pod Vihorlatom,Poruba p/Vihorlatom,072 32,37,3
 2772,Porúbka,Porúbka,013 11,79,8
-2773,Porúbka,Porúbka,067 41,19,5
-2774,Porúbka,Porúbka,072 61,61,3
-2775,Porúbka,Porúbka,086 12,4,5
 2776,Posádka,Posádka,920 56,18,7
 2777,Poša,Poša,094 21,74,5
 2778,Póšfa,Póšfa,930 34,15,7
 2779,Potočok,Potočok,991 22,73,1
-2780,Potok,Potok,023 56,12,8
-2781,Potok,Potok,034 83,55,8
 2782,Potok,Potok,982 67,53,1
-2783,Potoky,Potoky,013 62,11,8
-2784,Potoky,Potoky,082 71,56,5
 2785,Potoky,Potoky,091 01,64,5
 2786,Potôčky,Potôčky,091 01,64,5
 2787,Potônské Lúky,Potônske Lúky,930 52,15,7

@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.2'
+gem 'rails4-autocomplete'
+gem 'jquery-ui-rails'
 gem 'activerecord-postgis-adapter'
 gem 'sass-rails', '5.0.2'
 gem 'bootstrap-sass'

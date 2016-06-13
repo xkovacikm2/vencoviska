@@ -7,11 +7,12 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
+  get 'cities/autocomplete_city_name'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
 
   resources :users
-  resources :cities
+  resources :cities, only: [:show, :index]
   resources :areas, only: [:show, :create, :destroy, :update]
   resources :comments, only: [:create, :destroy]
   resources :statistics, only: [:index]
