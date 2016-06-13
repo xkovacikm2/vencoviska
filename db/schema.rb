@@ -11,23 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160410113307) do
+ActiveRecord::Schema.define(version: 20160613141751) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
-
-  create_table "area_border_lines", force: :cascade do |t|
-    t.float    "x_from"
-    t.float    "y_from"
-    t.float    "x_to"
-    t.float    "y_to"
-    t.integer  "area_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "area_border_lines", ["area_id"], name: "index_area_border_lines_on_area_id", using: :btree
 
   create_table "areas", force: :cascade do |t|
     t.string   "name"
@@ -36,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160410113307) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "city_id"
+    t.text     "geom"
   end
 
   add_index "areas", ["city_id"], name: "index_areas_on_city_id", using: :btree
@@ -75,7 +64,6 @@ ActiveRecord::Schema.define(version: 20160410113307) do
   add_index "users", ["city_id"], name: "index_users_on_city_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
-  add_foreign_key "area_border_lines", "areas"
   add_foreign_key "areas", "cities"
   add_foreign_key "areas", "users"
   add_foreign_key "comments", "areas"
