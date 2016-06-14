@@ -9,6 +9,7 @@ class AreasController < ApplicationController
     @area = Area.find params[:id]
     @comments = @area.comments.paginate page: params[:page]
     @comments = @comments.paginate(page: params[:page])
+    @colors = AreaColor.all
 
     @comment = @area.comments.build
 

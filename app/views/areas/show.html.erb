@@ -1,25 +1,44 @@
 <h2>Zona <%= @area.name %></h2>
-<p class="center">je v meste: <%= link_to @area.city.name, @area.city %></p>
-<p>Počet návštevníkov stránky zony: <%= @card %></p>
+<div class="row">
+  <div class="col-md-5 fixed">
+    <div id="map-city" class="map" ></div>
+  </div>
+  <div class="col-md-5 col-md-offset-6">
+    <p class="center">je v meste: <%= link_to @area.city.name, @area.city %></p>
+    <p class="center">Obmedzenia: <%= @area.area_color.description %></p>
+    <p class="center">Počet návštevníkov stránky zony: <%= @card %></p>
+    <p class="center"><%= @area.description %></p>
 
-<% if logged_in? %>
-    <div class="row">
-      <aside class="col-md-4 col-md-offset-4">
-        <section class="micropost_form">
-          <%= render 'comments/comment_form' %>
-        </section>
-      </aside>
-    </div>
+    <% if logged_in? %>
+        <div class="row">
+          <aside class="col-md-8 col-md-offset-2">
+            <section class="micropost_form">
+              <%= render 'comments/comment_form' %>
+            </section>
+          </aside>
+        </div>
+    <% end %>
+
+    <hr>
+    <h2> Počet príspevkov <%= @comments.count %></h2>
+    <% if @comments.any? %>
+        <ol class="comments">
+          <% @comments.each do |comment| %>
+              <% comment=Comment.new comment unless comment.instance_of? Comment %>
+              <%= render comment %>
+          <% end %>
+        </ol>
+        <%= will_paginate @comments %>
+    <% end %>
+  </div>
+</div>
+
+<%= content_tag :div, class: "city_class", data: {city: @area.city} do %>
+<% end %>
+<%= content_tag :div, class: "colors_class", data: {colors: @colors} do %>
+<% end %>
+<%= content_tag :div, class: "areas_class", data: {areas: [@area]} do %>
 <% end %>
 
-<hr>
-<h2> Počet príspevkov <%= @comments.count %></h2>
-<% if @comments.any? %>
-    <ol class="comments">
-      <% @comments.each do |comment| %>
-          <% comment=Comment.new comment unless comment.instance_of? Comment%>
-          <%= render comment %>
-      <% end %>
-    </ol>
-    <%= will_paginate @comments %>
-<% end %>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyABIzzN7SlW5GoZk7xOoBziqObZRw9TzsU&sensor=false&libraries=geometry" %>
+<script>document.onload = initCityMap();</script>
