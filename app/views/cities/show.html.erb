@@ -1,6 +1,9 @@
 <% provide(:title, @city.name) %>
-<h1>Zoznam zon v meste</h1>
+<h1><%= @city.name %></h1>
 <p>Počet návštevníkov stránky mesta: <%= @card %></p>
+
+<div id="map"></div>
+
 <%= will_paginate @areas %>
 
 <ul class="areas">
