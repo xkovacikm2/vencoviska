@@ -26,10 +26,24 @@ class AreasController < ApplicationController
   end
 
   def create
-
+    @area = current_user.areas.build area_params
+    if @area.save
+      flash[:success] = "Zona #{@area.name} úspešne vytvorená"
+      redirect_to @area
+    else
+      redirect_to 'new'
+    end
   end
 
   def destroy
 
+  end
+
+  ################################
+  private
+  ################################
+
+  def area_params
+    params.require(:area).permit(:name, :description, :city_id, :area_color_id, :geom)
   end
 end

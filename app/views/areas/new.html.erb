@@ -2,7 +2,7 @@
 <h1>Kreslítko</h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-1">
-    <div id="map-drawing-tool"></div>
+    <div id="map-drawing-tool" class="map"></div>
   </div>
   <div class="col-md-offset-1 col-md-3">
     <%= semantic_form_for @area do |f| %>
@@ -12,10 +12,11 @@
 
         <%= f.inputs do %>
             <%= f.input :name, label: 'Názov zóny', required: true %>
+            <%= f.input :area_color, as: :select, include_blank: false, collection: @colors.pluck(:description, :id), label: 'Obmedzenia', required: true %>
             <%= f.input :geom, as: :hidden, required: true %>
             <%= f.input :city_id, as: :hidden, input_html: {value: @area.city_id} %>
-            <%= f.input :description, label: 'Popis',as: :text, input_html: {:class => 'form-control', :rows => 4, :cols => 20,
-                                                              placeholder: "Stručný opis (1-2 vety)...."} %>
+            <%= f.input :description, label: 'Popis', as: :text, input_html: {:class => 'form-control', :rows => 4, :cols => 20,
+                                                                              placeholder: "Stručný opis (1-2 vety)...."} %>
         <% end %>
         <%= f.action :submit, label: 'Uložiť' %>
     <% end %>
@@ -23,3 +24,5 @@
 </div>
 <%= content_tag :div, class: "city_class", data: {city: @city} do %>
 <% end %>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyABIzzN7SlW5GoZk7xOoBziqObZRw9TzsU&sensor=false&libraries=drawing,geometry" %>
+<script>document.onload = initDrawingMap();</script>

@@ -11,22 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160613141751) do
+ActiveRecord::Schema.define(version: 20160614172043) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-  enable_extension "postgis"
+
+  create_table "area_colors", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "areas", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.integer  "city_id"
     t.text     "geom"
+    t.integer  "area_color_id"
   end
 
+  add_index "areas", ["area_color_id"], name: "index_areas_on_area_color_id", using: :btree
   add_index "areas", ["city_id"], name: "index_areas_on_city_id", using: :btree
   add_index "areas", ["user_id"], name: "index_areas_on_user_id", using: :btree
 
@@ -64,6 +72,7 @@ ActiveRecord::Schema.define(version: 20160613141751) do
   add_index "users", ["city_id"], name: "index_users_on_city_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
+  add_foreign_key "areas", "area_colors"
   add_foreign_key "areas", "cities"
   add_foreign_key "areas", "users"
   add_foreign_key "comments", "areas"
