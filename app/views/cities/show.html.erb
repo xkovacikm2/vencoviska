@@ -1,15 +1,20 @@
 <% provide(:title, @city.name) %>
 <h1><%= @city.name %></h1>
 <p>Počet návštevníkov stránky mesta: <%= @card %></p>
-
-<div id="map"></div>
+<div class="row">
+  <div id="map-city" class="map col-md-10"></div>
+</div>
 
 <% if logged_in? %>
-  <%= link_to "Pridať zónu", add_zone_path(id: "#{@city.id}"), class: "btn btn-lg btn-primary" %>
+    <%= link_to "Pridať zónu", add_zone_path(id: "#{@city.id}"), class: "btn btn-lg btn-primary" %>
 <% end %>
 
-<%= will_paginate @areas %>
+<%= content_tag :div, class: "city_class", data: {city: @city} do %>
+<% end %>
+<%= content_tag :div, class: "colors_class", data: {colors: @colors} do %>
+<% end %>
+<%= content_tag :div, class: "areas_class", data: {areas: @areas} do %>
+<% end %>
 
-<ul class="areas">
-  <%= render @areas %>
-</ul>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyABIzzN7SlW5GoZk7xOoBziqObZRw9TzsU&sensor=false&libraries=geometry" %>
+<script>document.onload = initCityMap();</script>

@@ -6,8 +6,6 @@ function initDrawingMap() {
         zoom: 8
     });
 
-    console.log(map);
-
     var drawingManager = new google.maps.drawing.DrawingManager({
         drawingMode: google.maps.drawing.OverlayType.POLYGON,
         drawingControl: true,
@@ -19,8 +17,6 @@ function initDrawingMap() {
         },
     });
 
-    console.log('dm set');
-
     var address = $('.city_class').data('city').name;
     moveTo(address, map);
     drawingManager.setMap(map);
@@ -30,6 +26,4 @@ function initDrawingMap() {
         var encodeString = google.maps.geometry.encoding.encodePath(path);
         $('#area_geom').val(encodeString);
     });
-
-    console.log('done');
 }

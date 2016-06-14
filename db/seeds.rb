@@ -17,3 +17,9 @@ color.save
 
 color = AreaColor.new name:'green', description:'Vstup bez obmedzení'
 color.save
+
+User.create!(name: 'hocikto19',
+             email: 'xkovacikm2@gmail.com',
+             password: '123456',
+             password_confirmation: '123456',
+             admin: true)

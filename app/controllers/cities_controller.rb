@@ -3,7 +3,8 @@ class CitiesController < ApplicationController
 
   def show
     @city = City.find params[:id]
-    @areas = @city.areas.paginate page: params[:page]
+    @colors = AreaColor.all
+    @areas = @city.areas.all
 
     @card = unique_visits "city-#{@city.id}"
     cache_location if logged_in?
