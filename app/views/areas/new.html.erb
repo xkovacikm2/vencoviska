@@ -1,8 +1,23 @@
 <%= provide(:title, "Pridať zónu") %>
 <h1>Kreslítko</h1>
 <div class="row">
-  <div class="col-md-3 col-md-offset-6">
+  <div class="col-md-6 col-md-offset-1">
     <div id="map-drawing-tool"></div>
+  </div>
+  <div class="col-md-offset-1 col-md-3">
+    <%= semantic_form_for @area do |f| %>
+        <%= render partial: 'shared/error_messages', locals: {obj: @area} %>
 
+        <%= f.semantic_errors %>
+
+        <%= f.inputs do %>
+            <%= f.input :name, label: 'Názov zóny', required: true %>
+            <%= f.input :geom, as: :hidden, required: true %>
+            <%= f.input :city_id, as: :hidden, input_html: {value: @area.city_id} %>
+            <%= f.input :description, label: 'Popis',as: :text, input_html: {:class => 'form-control', :rows => 4, :cols => 20,
+                                                              placeholder: "Stručný opis (1-2 vety)...."} %>
+        <% end %>
+        <%= f.action :submit, label: 'Uložiť' %>
+    <% end %>
   </div>
 </div>
