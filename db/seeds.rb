@@ -8,3 +8,12 @@ csv.each do |row|
   city.name = row[1]
   city.save
 end
+
+color = AreaColor.new name:'red', description:'Zákaz vstupu so psom'
+color.save
+
+color = AreaColor.new name:'yellow', description: 'Vstup len na vodítku'
+color.save
+
+color = AreaColor.new name:'green', description:'Vstup bez obmedzení'
+color.save

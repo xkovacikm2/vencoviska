@@ -2,6 +2,7 @@ class AreasController < ApplicationController
   def new
     @city = City.find params[:id]
     @area = @city.areas.new
+    @colors = AreaColor.all
   end
 
   def show

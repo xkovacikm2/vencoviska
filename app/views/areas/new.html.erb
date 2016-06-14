@@ -21,6 +21,5 @@
     <% end %>
   </div>
 </div>
-<div hidden="true">
-  <p id="city-name"><%= @city.name %></p>
-</div>
+<%= content_tag :div, class: "city_class", data: {city: @city} do %>
+<% end %>
