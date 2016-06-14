@@ -4,6 +4,10 @@
 
 <div id="map"></div>
 
+<% if logged_in? %>
+  <%= link_to "Pridať zónu", add_zone_path(id: "#{@city.id}"), class: "btn btn-lg btn-primary" %>
+<% end %>
+
 <%= will_paginate @areas %>
 
 <ul class="areas">

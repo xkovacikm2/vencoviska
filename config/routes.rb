@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'cities/autocomplete_city_name'
+  get 'add_zone' => 'areas#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
 

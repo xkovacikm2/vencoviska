@@ -1,4 +1,9 @@
 class AreasController < ApplicationController
+  def new
+    @city = City.find params[:id]
+    @area = @city.areas.new
+  end
+
   def show
     @area = Area.find params[:id]
 
