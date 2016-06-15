@@ -1,5 +1,6 @@
 class AreasController < ApplicationController
   before_action :logged_in_user, only:[:create, :new]
+  before_action :admin_user, only:[:destroy]
   def new
     @city = City.find params[:id]
     @area = @city.areas.new
@@ -7,7 +8,8 @@ class AreasController < ApplicationController
   end
 
   def show
-    @area = Area.find params[:id]
+    @area = Area.find_by id: params[:id]
+    return redirect_to not_found_path if @area.nil?
     @comments = @area.comments.paginate page: params[:page]
     @comments = @comments.paginate(page: params[:page])
     @colors = AreaColor.all
@@ -30,7 +32,11 @@ class AreasController < ApplicationController
   end
 
   def destroy
-
+    area = Area.find params[:id]
+    city = area.city
+    area.destroy
+    flash[:success] = 'Zona vymazaná'
+    redirect_to city
   end
 
 ################################
@@ -39,6 +45,10 @@ class AreasController < ApplicationController
 
   def area_params
     params.require(:area).permit(:name, :description, :city_id, :area_color_id, :geom)
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
   end
 
 end

@@ -9,7 +9,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user=User.find params[:id]
+    @user=User.find_by id: params[:id]
+    return redirect_to not_found_path if @user.nil?
     @comments = @user.comments.paginate page: params[:page]
     @pages = $redis.lrange("user-pages-#{@user.id}", 0, -1)
 

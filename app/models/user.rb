@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   belongs_to :city
   has_many :comments , dependent: :destroy
-  has_many :areas
+  has_many :areas, dependent: :nullify
   has_many :activities
   attr_accessor :remember_token
 

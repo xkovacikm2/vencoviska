@@ -19,4 +19,8 @@ class StaticPagesController < ApplicationController
   def contact
     cache_location if logged_in?
   end
+
+  def not_found
+
+  end
 end
