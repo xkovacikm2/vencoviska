@@ -24,5 +24,4 @@
 </div>
 <%= content_tag :div, class: "city_class", data: {city: @city} do %>
 <% end %>
-<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyABIzzN7SlW5GoZk7xOoBziqObZRw9TzsU&sensor=false&libraries=drawing,geometry" %>
-<script>document.onload = initDrawingMap();</script>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyABIzzN7SlW5GoZk7xOoBziqObZRw9TzsU&libraries=drawing,geometry&callback=initDrawingMap", defer: 'defer', async: 'async' %>
