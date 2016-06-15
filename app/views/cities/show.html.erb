@@ -5,9 +5,7 @@
   <div id="map-city" class="map col-md-10"></div>
 </div>
 
-<% if logged_in? %>
-    <%= link_to "Pridať zónu", add_zone_path(id: "#{@city.id}"), class: "btn btn-lg btn-primary" %>
-<% end %>
+<%= link_to "Pridať zónu", add_zone_path(id: "#{@city.id}"), class: "btn btn-lg btn-primary" %>
 
 <%= content_tag :div, class: "city_class", data: {city: @city} do %>
 <% end %>
@@ -16,5 +14,5 @@
 <%= content_tag :div, class: "areas_class", data: {areas: @areas} do %>
 <% end %>
 
-<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyABIzzN7SlW5GoZk7xOoBziqObZRw9TzsU&libraries=geometry&callback=initCityMap", defer: 'defer', async: 'async'  %>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyABIzzN7SlW5GoZk7xOoBziqObZRw9TzsU&libraries=geometry&callback=initCityMap", defer: 'defer', async: 'async' %>
 <script>document.onload = initCityMap();</script>

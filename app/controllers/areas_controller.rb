@@ -1,4 +1,5 @@
 class AreasController < ApplicationController
+  before_action :logged_in_user, only:[:create, :new]
   def new
     @city = City.find params[:id]
     @area = @city.areas.new
