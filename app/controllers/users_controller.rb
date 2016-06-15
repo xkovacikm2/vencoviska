@@ -21,6 +21,7 @@ class UsersController < ApplicationController
     @user=User.new user_params
     if @user.save
       log_in @user
+      store_activity 'sa zaregistroval/a'
       flash[:success] = "Vitajte vo Venčoviskách"
       redirect_to @user
     else

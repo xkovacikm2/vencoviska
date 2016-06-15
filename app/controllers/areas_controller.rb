@@ -21,6 +21,7 @@ class AreasController < ApplicationController
     @area = current_user.areas.build area_params
     if @area.save
       flash[:success] = "Zona #{@area.name} úspešne vytvorená"
+      store_activity 'vytvoril/a oblasť', @area, @area.name
       redirect_to @area
     else
       redirect_to 'new'

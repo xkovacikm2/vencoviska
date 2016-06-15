@@ -1,8 +1,17 @@
 <div class="center jumbotron">
   <h1>Vitajte vo venčoviskách</h1>
 
-  <h2>Toto je domovská stránka</h2>
-
-  <%= link_to("Zaregistrujte sa teraz!", signup_path, class: "btn btn-lg btn-primary") unless logged_in? %>
+  <%= link_to("Prihlásiť sa", login_path, class: "btn btn-lg btn-primary") unless logged_in? %>
   <%= link_to("Zobraziť zoznam miest", cities_path, class: "btn btn-lg btn-primary") %>
+  <div class="container activities">
+    <% if @activities.any? and logged_in? %>
+        <ol>
+          <% @activities.each do |activity| %>
+              <% activity=Activity.new activity unless activity.instance_of? Activity%>
+              <%= render activity %>
+          <% end %>
+        </ol>
+        <%= will_paginate @activities %>
+    <% end %>
+  </div>
 </div>

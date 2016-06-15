@@ -1,0 +1,9 @@
+<li id="activity-<%= activity.id %>">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <%= link_to gravatar_for(activity.user, size: 50), activity.user %>
+      <span class="user"><%= link_to activity.user.name, activity.user %></span>
+      <span class="content"><%= activity.name %> <%= raw activity.link unless activity.link.nil?%> </span>
+    </div>
+  </div>
+</li>
