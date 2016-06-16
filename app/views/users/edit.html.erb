@@ -13,9 +13,9 @@
 
     <%= semantic_form_for @user do |f| %>
         <%= f.inputs do %>
-            <%= f.input :description, as: :text,  :input_html=> { :class => 'form-control', :rows => 11, :cols => 20, :maxlength => 300  } %>
+            <%= f.input :description, as: :text, label:'Krátky opis',  :input_html=> { :class => 'form-control', :rows => 11, :cols => 20, :maxlength => 300  } %>
         <% end %>
-        <%= f.action :submit, label: 'Uložiť popis' %>
+        <%= f.action :submit, label: 'Uložiť popis', button_html: {class:'btn btn-primary'} %>
     <% end %>
 
   </div>

@@ -4,12 +4,12 @@
     <%= f.semantic_errors %>
 
     <%= f.inputs do %>
-        <%= f.input :name %>
+        <%= f.input :name, label: 'meno' %>
         <%= f.input :email, as: :email %>
-        <%= f.input :city, as: :select, collection: @cities %>
-        <%= f.input :birthday, as: :date_picker, input_html: { placeholder: "YYYY-MM-DD" } %>
-        <%= f.input :password, as: :password %>
-        <%= f.input :password_confirmation, as: :password %>
+        <%= f.input :city, as: :select, label: 'mesto', collection: @cities %>
+        <%= f.input :birthday, as: :date_picker, label: 'dátum narodenia', input_html: {placeholder: "YYYY-MM-DD"} %>
+        <%= f.input :password, as: :password, label: 'heslo' %>
+        <%= f.input :password_confirmation, as: :password, label: 'potvrdenie hesla' %>
     <% end %>
-    <%= f.action :submit, label: locals[:btn_action] %>
+    <%= f.action :submit, label: locals[:btn_action], button_html: {class:'btn btn-primary'}%>
 <% end %>

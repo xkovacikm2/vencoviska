@@ -1,8 +1,8 @@
 <%= semantic_form_for @comment do |f| %>
     <%= f.inputs do %>
-        <%= f.input :content, as: :text, input_html: { :class => 'form-control', :rows => 11, :cols => 20,
+        <%= f.input :content, as: :text, label:'Komentár', input_html: { :class => 'form-control', :rows => 5, :cols => 20,
               placeholder: "Napiste text...."} %>
         <%= f. input :area_id, as: :hidden, input_html: { value: @area.id } %>
     <% end %>
-    <%= f.action :submit, label: 'Vlozit komentar' %>
+    <%= f.action :submit, label: 'Vlozit komentar', button_html: {class: 'btn btn-primary'} %>
 <% end %>

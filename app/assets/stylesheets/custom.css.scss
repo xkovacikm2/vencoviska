@@ -11,10 +11,31 @@ $gray-medium-light: #eaeaea;
   box-sizing: border-box;
 }
 
+.jumbotron {
+  background: image-url("jumbotron.png") repeat ;
+}
+
+.panel {
+  box-shadow: 3px 3px 2px #888888;
+  margin-bottom: 10px;
+}
+
+.cities {
+  list-style-type: none;
+  a {
+    text-decoration: none;
+  }
+}
+
+.map {
+  opacity: 1;
+}
+
 /* universal */
 
 body {
   padding-top: 60px;
+  background: #fff image-url("body-background.jpg") no-repeat fixed center;
 }
 
 section {
@@ -32,14 +53,14 @@ textarea {
   }
 }
 
-.activity-text{
+.activity-text {
   margin-top: 11px;
 }
 
 #popup {
   max-width: 640px;
   text-align: center;
-  vertical-align:middle;
+  vertical-align: middle;
   background-color: cornflowerblue;
   color: white;
   display: none;
@@ -166,12 +187,24 @@ input {
   height: auto !important;
 }
 
+.btn {
+  box-shadow: 3px 3px 2px #888888;
+  margin: 5px;
+}
+
 #error_explanation {
   color: red;
   ul {
     color: red;
     margin: 0 0 30px 0;
   }
+}
+
+#search-form {
+  font-size: 30px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
 
 /* Users list */

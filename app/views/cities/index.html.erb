@@ -3,7 +3,7 @@
 
 <%= form_tag(cities_path, :method => "get", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], class: "search-query", placeholder: "Bratislava", type: "search", data: {autocomplete: cities_autocomplete_city_name_path} %>
-    <%= submit_tag "Hladať" %>
+    <%= submit_tag "Hladať", class: "btn btn-primary" %>
 <%end%>
 
 <%= will_paginate if @cities%>
