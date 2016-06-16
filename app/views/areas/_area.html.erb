@@ -1,6 +1,6 @@
 <li>
   <%= link_to area.name, area %>
-  <% if !current_user.nil? && current_user.admin? %>
+  <% if current_user and current_user.admin? %>
       | <%= link_to "Zmazať", area, method: :delete, data: { confirm: "Naozaj?" }, class: 'btn btn-primary' %>
   <% end %>
   <div class="panel panel-default">

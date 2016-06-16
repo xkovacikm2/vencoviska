@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'not_found' => 'static_pages#not_found'
   get 'help' => 'static_pages#help'
   get 'about' => 'static_pages#about'
-  get 'contact' => 'static_pages#contact'
+  get 'contact' => 'contacts#new'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'cities/autocomplete_city_name'
@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   resources :cities, only: [:show, :index]
   resources :areas, only: [:show, :create, :destroy, :update]
   resources :comments, only: [:create, :destroy]
+  resources :contacts, only: [:create, :new]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

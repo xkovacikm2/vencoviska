@@ -1,0 +1,29 @@
+<div align="center">
+  <h1>Kontaktný formulár</h1>
+
+  <p>
+    V prípade akýchkoľvek postrehov, alebo nápadov ma kontaktujte pomocou
+    tohoto formulára.
+  </p>
+  <div class="row">
+    <%= semantic_form_for @contact do |f| %>
+        <%= render partial: 'shared/error_messages', locals: {obj: @contact} %>
+
+        <%= f.semantic_errors %>
+
+        <%= f.inputs do %>
+            <div class="col-md-4 col-md-offset-1">
+              <%= f.input :name, label: 'Meno', required: true %>
+              <%= f.input :email, :required => true %>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+              <%= f.input :message, as: :text, input_html: {rows:5}, :required => true %>
+              <div class="hidden">
+                <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+              </div>
+            </div>
+        <% end %>
+        <%= f.action :submit, label: 'Odoslať' %>
+    <% end %>
+  </div>
+</div>

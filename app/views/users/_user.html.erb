@@ -2,8 +2,8 @@
   <%= gravatar_for user, size: 50 %>
   <%= link_to user.name, user %>
   | Vek: <%= time_ago_in_words user.birthday unless user.birthday.nil? %>
-  <% if current_user.admin? && !current_user?(user) %>
-      | <%= link_to "Zmazať", user, method: :delete, data: { confirm: "Naozaj?" }, class: 'btn btn-primary' %>
+  <% if current_user and current_user.admin? and !current_user?(user) %>
+      | <%= link_to "Zmazať", user, method: :delete, data: {confirm: "Naozaj?"}, class: 'btn btn-primary' %>
   <% end %>
   <div class="panel panel-default">
     <div class="panel-heading">

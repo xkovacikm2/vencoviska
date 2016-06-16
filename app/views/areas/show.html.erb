@@ -4,7 +4,7 @@
     <div id="map-city" class="map" ></div>
   </div>
   <div class="col-md-5 col-md-offset-7">
-    <% if current_user.admin? %>
+    <% if current_user and current_user.admin? %>
         | <%= link_to "Zmazať", @area, method: :delete, data: { confirm: "Naozaj?" }, class: 'btn btn-primary' %>
     <% end %>
     <p class="center">je v meste: <%= link_to @area.city.name, @area.city %></p>

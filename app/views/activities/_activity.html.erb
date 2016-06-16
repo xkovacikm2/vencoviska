@@ -1,9 +1,11 @@
 <li id="activity-<%= activity.id %>">
   <div class="panel panel-default">
     <div class="panel-body">
-      <%= link_to gravatar_for(activity.user, size: 50), activity.user unless activity.user.nil? %>
-      <span class="user"><%= raw activity.user.nil? ? 'anonym' : "#{link_to activity.user.name, activity.user}" %></span>
-      <span class="content"><%= activity.name %> <%= raw activity.link unless activity.link.nil?%> </span>
+      <%= link_to gravatar_for(activity.user, 50), activity.user unless activity.user.nil? %>
+      <div class="activity-text">
+        <span class="user"><%= raw activity.user.nil? ? 'anonym' : "#{link_to activity.user.name, activity.user}" %></span>
+        <span class="content"><%= activity.name %> <%= raw activity.link unless activity.link.nil? %> </span>
+      </div>
     </div>
   </div>
 </li>

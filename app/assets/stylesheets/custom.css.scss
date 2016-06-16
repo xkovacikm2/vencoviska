@@ -32,6 +32,22 @@ textarea {
   }
 }
 
+.activity-text{
+  margin-top: 11px;
+}
+
+#popup {
+  max-width: 640px;
+  text-align: center;
+  vertical-align:middle;
+  background-color: cornflowerblue;
+  color: white;
+  display: none;
+  padding-top: 8px;
+  position: absolute;
+  z-index: 2;
+}
+
 .gravatar {
   float: left;
   margin-right: 10px;
