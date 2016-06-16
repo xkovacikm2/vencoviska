@@ -28,14 +28,16 @@ function initCityMap(){
             fillColor: colors[element.area_color_id - 1].name,
             fillOpacity: 0.35
         });
-        google.maps.event.addListener(polygon,"mouseover",function(){
+        google.maps.event.addListener(polygon,"mouseover",function() {
             map.data.revertStyle();
-            $('#info-box').text(element.name+' | '+colors[element.area_color_id - 1].description);
+            var box = $('#info-box');
+            var appendix1 = '<p style="text-align: center;">' + element.name + ' </p><p style="color: '+ colors[element.area_color_id - 1].name +'; text-align: center;"> ' + colors[element.area_color_id - 1].description + "</p>";
+            box.append(appendix1);
         });
 
         google.maps.event.addListener(polygon,"mouseout",function(){
             map.data.revertStyle();
-            $('#info-box').text('');
+            $('#info-box').empty();
         });
         google.maps.event.addListener(polygon,"click",function(){
             window.location.href = '/areas/'+element.id
