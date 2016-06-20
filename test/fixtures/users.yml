@@ -4,11 +4,13 @@ flm:
   email: flm@flm.sk
   password_digest: <%= User.digest 'password' %>
   admin: true
+  id: 1
 
 anton:
   name: vilko
   email: toncek@gmail.com
   password_digest: <%= User.digest('password') %>
+  id: 2
 
 <% 30.times do |n| %>
 user_<%= n %>:

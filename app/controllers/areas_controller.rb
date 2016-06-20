@@ -47,8 +47,4 @@ class AreasController < ApplicationController
     params.require(:area).permit(:name, :description, :city_id, :area_color_id, :geom)
   end
 
-  def admin_user
-    redirect_to root_url unless current_user and current_user.admin?
-  end
-
 end

@@ -45,7 +45,6 @@ class UsersController < ApplicationController
 
   def index
     @users=User.paginate page: params[:page]
-    @cities=City.all
 
     cache_location if logged_in?
   end
