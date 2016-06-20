@@ -10,7 +10,7 @@
             <%= f.input :remember_me, as: :boolean, label:'Zapamätať prihlásenie' %>
         <% end %>
 
-        <%= f.action :submit, label: "Prihlásiť" %>
+        <%= f.action :submit, label: "Prihlásiť", button_html: {class: 'btn btn-primary'} %>
     <% end %>
 
     <p>Nie ste zaregistrovaní? <%= link_to "Registovať!", signup_path %></p>

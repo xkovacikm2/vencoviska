@@ -20,7 +20,11 @@ $gray-medium-light: #eaeaea;
   margin-bottom: 10px;
 }
 
-.cities {
+#helper {
+  background-color: chartreuse;
+}
+
+.cities, .users {
   list-style-type: none;
   a {
     text-decoration: none;
