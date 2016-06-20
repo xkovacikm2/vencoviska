@@ -18,5 +18,6 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
     @user.comments.paginate(page: 1).each do |comment| 
       assert_match comment.content, response.body
     end
+    assert_select 'div>h2', text: 'Posledné navštívené stránky'
   end
 end

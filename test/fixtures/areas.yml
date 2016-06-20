@@ -4,10 +4,5 @@ one:
   name: Park psov
   description: tu sa so psami smie
   user: flm
-  city: Bratislava
-
-two:
-  name: Parkovisko
-  description: tu sa s nimi nesmie
-  user: flm
-  city: Kosice
+  city_id: 1
+  area_color_id: 1
